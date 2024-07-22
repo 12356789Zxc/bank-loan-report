@@ -1,102 +1,94 @@
-# Bank Loan Report Project
+# Bank Loan Analysis Dashboard
 
-## Overview
+## Project Description
+This project presents a comprehensive bank loan analysis dashboard developed using SQL for data processing and Tableau for visualization. It provides in-depth insights into key lending metrics and loan portfolio performance through three interconnected dashboards: Summary, Overview, and Details. The dashboard enables data-driven decision-making for lending strategies, offers insights into loan portfolio health, and supports risk assessment through visualization of good vs bad loan metrics.
 
-This project provides a detailed analysis of bank loan data using SQL and Tableau. The analysis covers various metrics including loan applications, funded amounts, received amounts, interest rates, debt-to-income ratios, and loan statuses. The primary objective is to gain insights into the performance and risk associated with different loan types and to support data-driven decision-making.
+## Dashboard Screenshots
 
-## Table of Contents
+### Summary Dashboard
+![Screenshot (20)](https://github.com/user-attachments/assets/660e94d3-8e30-47aa-9758-0b84cd5dcdb8)
 
-- [Project Structure](#project-structure)
-- [Summary](#summary)
-- [Key Performance Indicators (KPIs) Analyzed](#key-performance-indicators-kpis-analyzed)
-- [Analysis Breakdown](#analysis-breakdown)
-- [Getting Started](#getting-started)
-- [Data Fields and Their Descriptions](#data-fields-and-their-descriptions)
-- [License](#license)
+
+### Overview Dashboard
+![Screenshot (21)](https://github.com/user-attachments/assets/4efc93cb-9cb2-4ab0-a1e1-bf581ac3a4f2)
+
+
+### Details Dashboard
+![Screenshot (22)](https://github.com/user-attachments/assets/c00dfeaa-45d6-43f1-9457-f40495a8ffa8)
+
+
+## Key Features
+
+1. **Summary Dashboard**
+   - Display of critical KPIs (total loan applications, funded amount, amount received, average interest rate, average DTI)
+   - Visualization of good vs bad loan performance
+   - Loan status grid showing detailed breakdowns by loan status
+
+2. **Overview Dashboard**
+   - Monthly application trends
+   - State-wise analysis
+   - Loan term distribution
+   - Employee length analysis
+   - Loan purpose analysis
+   - Home ownership breakdown
+
+3. **Details Dashboard**
+   - Comprehensive data table view with key loan attributes
+   - Filters for Purpose, Grade, and Verification Status
+   - Flexible measure selection for analysis
+
+## Technical Skills Demonstrated
+
+- SQL for data extraction and processing
+- Data visualization using Tableau
+- Dashboard design and layout
+- Interactive filtering and drill-down capabilities
+- KPI definition and calculation
+- Geospatial analysis
+- Time series analysis
 
 ## Project Structure
 
-- **data/**: Contains the bank loan data file (`bank_loan_data.csv`).
-- **queries/**: Contains SQL query files for different parts of the analysis.
-- **docs/**: Contains documentation files, including field descriptions and project description.
-- **README.md**: Provides an overview of the project.
-- **LICENSE**: Contains the license information for the project.
-- **.gitignore**: Specifies files and directories to be ignored by Git.
-- **tableau/**: Contains Tableau dashboard files and visualizations.
+- `data/`: Contains the bank loan data file (bank_loan_data.csv)
+- `queries/`: Contains SQL query files for different parts of the analysis
+- `docs/`: Contains documentation files, including field descriptions
+- `tableau/`: Contains Tableau dashboard files and visualizations workbook and images
+- `README.md`: Provides an overview of the project
+- `.gitignore`: Specifies files and directories to be ignored by Git
 
-## Summary
+## Instructions for Viewing/Using the Dashboard
 
-This project aims to analyze and report on bank loan data to understand various metrics such as the number of loan applications, funded amounts, and the performance of loans. The analysis is performed using SQL for data extraction and processing, and Tableau for creating interactive dashboards that visualize the insights derived from the data.
+1. **Tableau Public**: 
+   - The dashboard is hosted on Tableau Public. You can view it here
+     ((https://public.tableau.com/app/profile/malothu.bhanu.prakash/viz/BANKLOANSUMMARY/Summary?publish=yes)).
+   - No installation is required to view the dashboard on Tableau Public.
+
+2. **Local Viewing**:
+   - Download the Tableau workbook file (.twbx) from this repository.
+   - Install Tableau Reader (free) or Tableau Desktop (paid) from the [Tableau website](https://www.tableau.com/products/reader).
+   - Open the downloaded .twbx file using Tableau Reader or Desktop.
+
+3. **Navigation**:
+   - Use the tabs at the bottom to switch between Summary, Overview, and Details dashboards.
+   - Utilize filters on the left side to drill down into specific data subsets.
+   - Hover over chart elements for tooltips with additional information.
+   - Click on elements in some charts to filter other charts on the dashboard.
 
 ## Key Performance Indicators (KPIs) Analyzed
 
-- **Total Loan Applications**
-- **Month-to-Date (MTD) Loan Applications**
-- **Previous Month-to-Date (PMTD) Loan Applications**
-- **Total Funded Amount**
-- **MTD Total Funded Amount**
-- **PMTD Total Funded Amount**
-- **Total Amount Received**
-- **MTD Total Amount Received**
-- **PMTD Total Amount Received**
-- **Average Interest Rate**
-- **Average Debt-to-Income Ratio (DTI)**
-- **Good Loan Issued (Fully Paid or Current)**
-- **Bad Loan Issued (Charged Off)**
-- **Loan Status Overview**
+- Total Loan Applications (including MTD and PMTD)
+- Total Funded Amount (including MTD and PMTD)
+- Total Amount Received (including MTD and PMTD)
+- Average Interest Rate
+- Average Debt-to-Income Ratio (DTI)
+- Good Loan vs Bad Loan Analysis
+- Loan Status Overview
 
-## Analysis Breakdown
+## Data Fields
 
-1. **SQL Queries**: SQL is used to perform detailed data extraction and analysis. Queries are organized into separate files for summaries, overviews, and specific filters.
-2. **Tableau Dashboards**: Interactive dashboards are created in Tableau to visualize the SQL query results, making it easier to interpret the data and gain actionable insights.
+For a complete description of the data fields used in this project, refer to the Field Descriptions document in the `docs/` directory. Key fields include Loan ID, Address State, Employee Length, Grade, Sub Grade, Home Ownership, Issue Date, Loan Status, Purpose, Term, Annual Income, DTI, Interest Rate, and Loan Amount.
 
-## Getting Started
 
-To get started with this project, follow these steps:
+## Contact
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/12356789ZXC/bank-loan-report.git
-    ```
-
-2. Navigate to the project directory:
-    ```bash
-    cd bank-loan-report
-    ```
-
-3. Review the documentation in the `docs/` directory for detailed information about the project.
-
-4. Execute the SQL queries in the `queries/` directory using your preferred SQL tool.
-
-5. Open the Tableau files in the `tableau/` directory to view and interact with the dashboards.
-
-## Data Fields and Their Descriptions
-
-For a complete description of the data fields used in this project, refer to the [Field Descriptions](docs/field_descriptions.md) document.
-
-### Example Data Fields
-
-- **Loan ID**: Unique identifier for each loan.
-- **Address State**: Indicates the borrower's location.
-- **Employee Length**: Provides insights into the borrower's employment stability.
-- **Employee Title**: Specifies the borrower's occupation or job title.
-- **Grade**: Represents a risk classification assigned to the loan based on creditworthiness.
-- **Sub Grade**: Refines the risk assessment within a grade.
-- **Home Ownership**: Indicates the borrower's housing status.
-- **Issue Date**: Marks the loan's origination date.
-- **Last Credit Pull Date**: Records when the borrower's credit report was last accessed.
-- **Last Payment Date**: Marks the most recent loan payment received.
-- **Loan Status**: Indicates the current state of the loan.
-- **Next Payment Date**: Estimates the date of the next loan payment.
-- **Purpose**: Specifies the reason for the loan.
-- **Term**: Defines the duration of the loan in months.
-- **Verification Status**: Indicates whether the borrower's financial information has been verified.
-- **Annual Income**: Reflects the borrower's total yearly earnings.
-- **DTI (Debt-to-Income Ratio)**: Measures the borrower's debt burden relative to income.
-- **Instalment**: Fixed monthly payment amount for loan repayment.
-- **Interest Rate**: Represents the annual cost of borrowing expressed as a percentage.
-- **Loan Amount**: Total borrowed sum.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+For any queries regarding this project, please open an issue in this repository.
