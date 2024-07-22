@@ -13,7 +13,6 @@ This project provides a detailed analysis of bank loan data using SQL and Tablea
 - [Getting Started](#getting-started)
 - [Data Fields and Their Descriptions](#data-fields-and-their-descriptions)
 - [License](#license)
-- [Acknowledgments](#acknowledgments)
 
 ## Project Structure
 
