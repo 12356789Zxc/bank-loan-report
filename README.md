@@ -47,28 +47,19 @@ This project presents a comprehensive bank loan analysis dashboard developed usi
 - Geospatial analysis
 - Time series analysis
 
-## Project Structure
-
-- `data/`: Contains the bank loan data file (bank_loan_data.csv)
-- `queries/`: Contains SQL query files for different parts of the analysis
-- `docs/`: Contains documentation files, including field descriptions
-- `tableau/`: Contains Tableau dashboard files and visualizations workbook and images
-- `README.md`: Provides an overview of the project
-- `.gitignore`: Specifies files and directories to be ignored by Git
-
 ## Instructions for Viewing/Using the Dashboard
 
-1. **Tableau Public**: 
+1. Tableau Public: 
    - The dashboard is hosted on Tableau Public. You can view it here
      ((https://public.tableau.com/app/profile/malothu.bhanu.prakash/viz/BANKLOANSUMMARY/Summary?publish=yes)).
    - No installation is required to view the dashboard on Tableau Public.
 
-2. **Local Viewing**:
+2. Local Viewing:
    - Download the Tableau workbook file (.twbx) from this repository.
    - Install Tableau Reader (free) or Tableau Desktop (paid) from the [Tableau website](https://www.tableau.com/products/reader).
    - Open the downloaded .twbx file using Tableau Reader or Desktop.
 
-3. **Navigation**:
+3. Navigation:
    - Use the tabs at the bottom to switch between Summary, Overview, and Details dashboards.
    - Utilize filters on the left side to drill down into specific data subsets.
    - Hover over chart elements for tooltips with additional information.
